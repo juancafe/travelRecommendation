@@ -91,13 +91,13 @@
         "name": "Copacabana Beach, Brazil",
         "imageUrl": "enter_your_image_for_copacabana.jpg",
         "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
-      }
+      },
       {
         "id": 3,
         "name": "Playa Sur, :a Pedrera Rocha Uruguay",
         "imageUrl": "enter_your_image_for_bora-bora.jpg",
         "description": "Divina playa en Rocha."
-      },
+      }
     ]
   }
   
