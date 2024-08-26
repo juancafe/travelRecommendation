@@ -1,6 +1,6 @@
 
 body {
-    background-image: url('images/puntadeleste.jpg');
+    background-image: url('./images/puntadeleste.jpg');
 }
 
 body, html {
