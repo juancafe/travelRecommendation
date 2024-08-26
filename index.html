@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveller Explorer</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+    <style>
+        p {
+          background-image: url('./images/puntadeleste.jpg');
+        }
+    </style>
+</head>
+<body>
+    <p style="background-image: url('./images/puntadeleste.jpg');"> 
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo"> 
+            <img src="./images/logo.jpg" alt="Travel Explorer Logo" /> 
+            <span>Travel Explorer</span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+        
+        <!-- Search Bar in Header -->
+        <div class="search-container">
+            <div class="search-bar-wrapper">
+                <input type="text" id="search-bar" placeholder="Enter a destination or keyword ...">
+                <button class="search-btn" onclick="searchDestinations()">Search</button>
+                <button class="reset-btn" onclick="resetSearch()">Reset</button>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1>Explore Your Dream Destination</h1>
+            <p>
+                Punta del Este la joya del Sur. Las mejores playas y diversion asegurada.
+            </p>
+            <a href="#" class="btn">Book Now</a>
+        </div>
+    </header>
+
+    <!-- Search Results Overlay -->
+    <div id="search-results-overlay" class="search-results-overlay">
+        <div id="search-results"></div>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-media-icons">
+        <a href="https://twitter.com" target="_blank"><img src="images/social/twitter.png" alt=""></a>
+        <a href="https://facebook.com" target="_blank"><img src="images/social/facebook.webp" alt=""></a>
+        <a href="https://instagram.com" target="_blank"><img src="images/social/instagram.jpg" alt=""></a>
+        <a href="https://youtube.com" target="_blank"><img src="images/social/youtube.png" alt=""></a>
+    </div>
+
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>

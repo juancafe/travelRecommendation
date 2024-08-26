@@ -1,0 +1,346 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #112232;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Wrapper for input and buttons */
+.search-bar-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.search-container input[type="text"] {
+    padding: 10px 120px 10px 10px;
+    border: 0px solid #ff5733;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-container .search-btn, 
+.search-container .reset-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 7px;
+    border-radius: 50px;
+}
+.search-container .search-btn {
+    margin-right: 20px;
+}
+
+.search-container .search-btn {
+    right: 40px; /* Adjust as needed */
+    background-color: #ff5733;
+}
+
+.search-container .search-btn:hover {
+    background-color: #e14e1c;
+}
+
+.search-container .reset-btn {
+    right: 10px; /* Position close to the edge */
+    background-color: #333;
+}
+
+.search-container .reset-btn:hover {
+    background-color: #555;
+}
+
+
+
+
+/* Existing styles... */
+
+.search-results-overlay {
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    right: 20px;
+    width: 400px; /* Fixed width for the overlay */
+    background-color: white;
+    border: 0px solid #ccc;
+    max-height: 440px; /* Adjust height as needed */
+    overflow-y: auto;
+    z-index: 1000;
+    display: none; /* Hidden by default */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-results-overlay .result-item .footer_container {
+    padding: 10px;
+}
+
+.search-results-overlay .result-item {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.search-results-overlay .result-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.search-results-overlay .result-item h4 {
+    margin: 10px 0 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-results-overlay .result-item p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.search-results-overlay .result-item .btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+header {
+    position: relative;
+    height: 100vh;
+    background: url('./images/banner_1.jpg') no-repeat center center/cover;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 200px; /* Adjust to align as needed */
+    width: 400px; /* Set the width for the content */
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
+}
+
+.header-content h1 {
+    margin: 0 0 10px;
+    font-size: 60px;
+}
+
+.header-content p {
+    margin: 0 0 20px;
+    font-size: 20px;
+}
+
+.header-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+.social-media-icons {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    z-index: 1000;
+}
+
+.social-media-icons a {
+    display: block;
+}
+
+.social-media-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* Add to existing CSS */
+header.about-header {
+    position: relative;
+    height: 100vh;
+    background: url('./images/about-us.webp') no-repeat center center/cover;
+}
+
+
+
+/* Contact Us Header Section */
+.header-content.contact-us {
+    left: 0px !important;
+    top: 30% !important;
+}
+.contact-header {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background: url('./images/contact-us-banner.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.contact-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+}
+
+.contact-header .header-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-header .text-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.contact-header .form-section {
+    flex: 1;
+    padding-left: 20px;
+    background: #56585508;
+    padding: 20px 40px 16px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header .text-section h1 {
+    margin: 0 0 20px;
+    font-size: 48px;
+}
+
+.contact-header .text-section p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Contact Form Styles */
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #898989;
+    border-radius: 5px;
+    background: #56585508;
+}
+
+.contact-form .form-group textarea {
+    resize: vertical;
+}
+
+.contact-form .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-form .btn:hover {
+    background-color: #e14e1c;
+}
